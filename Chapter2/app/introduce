@@ -1,0 +1,21 @@
+
+1.在一个应用中开启多个进程方法,在activity标签中配置process属性
+android:process=":remote",应用类私有进程不可以共享
+android:process="com.ryg.chapter_2.remote"  可以实现进程间共享
+
+2.在一个应用中使用多进程可能造成的问题
+    1.Application会创建多次
+    2.静态成员变量失效
+    3.SharePreference可靠性下降
+    4.线程同步机制完全失效
+
+3.Serializable接口
+serialVersionUID存在的意义
+辅助序列化和反序列化,在反序列化过程中会看本地文件中被序列化的对象和类中的uid是否匹配,不匹配不能成功被反序列化
+实现:implements Serializable
+
+4.Parcelable接口
+和Serializeable相比实现起来比较复杂,但是效率更高,Parcelable主要用于内存序列化上
+
+5.Bindler
+

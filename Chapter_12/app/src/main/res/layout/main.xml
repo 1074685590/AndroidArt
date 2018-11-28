@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <ListView android:id="@+id/myListView"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"/>
+    <com.ryg.chapter_12.SelectionIndexerTest.SideBar
+        android:id="@+id/sideBar"
+        android:layout_width="22px"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>
