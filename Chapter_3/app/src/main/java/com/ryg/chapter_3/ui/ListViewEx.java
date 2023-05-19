@@ -47,6 +47,7 @@ public class ListViewEx extends ListView {
             int deltaY = y - mLastY;
             Log.d(TAG, "dx:" + deltaX + " dy:" + deltaY);
             if (Math.abs(deltaX) > Math.abs(deltaY)) {
+                //子控件不需要事件父布局接收事件
                 mHorizontalScrollViewEx2.requestDisallowInterceptTouchEvent(false);
             }
             break;
