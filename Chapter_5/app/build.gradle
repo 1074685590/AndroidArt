@@ -19,6 +19,6 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:19.1.0'
-    compile files('libs/nineoldandroids.jar')
+//    compile 'com.android.support:support-v4:19.1.0'
+//    compile files('libs/nineoldandroids.jar')
 }
